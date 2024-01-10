@@ -63,25 +63,25 @@ Data pre-preprocessing is the initial stage of data preparation before standard 
 In our data processing pipeline, we utilized the nltk.tokenize module's word_tokenize function for tokenization , This function allowed us to break down sentences or paragraphs into individual words or tokens. By using word_tokenize, we obtained a list of tokens, where each token represented a distinct word in the text.
 We utilized also the gensim.models module's Word2Vec class for word embedding generation.
 
-![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/85203beb-1c53-43eb-95ef-6ef2b35f8b93)
+![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/c81cf36c-8fa0-4f6b-b44e-9ce338e48096)
 
 Tokenization :
 
 tokenization refers to the process of breaking down a sequence of text into individual units, known as tokens.
 
-![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/8ce3cbeb-a3be-4aae-a4b3-800f65add6a4)
+![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/eba5b740-ab27-4697-b2dc-a23f0493f2c1)
 
 
 Lemmatization :
 
 Lemmatization is valuable in text preprocessing for various NLP applications as it helps reduce the dimensionality of the vocabulary and ensures that different inflections of a word are treated as the same term.
 
-![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/5ab3b7b4-187b-4a42-9701-732cfd9fafd7)
+![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/50033b18-4307-4d6a-b348-57dfc9b29ed6)
 
 Split Data :
 Data splitting is the practice of dividing a dataset into training and testing sets for machine learning model evaluation.
 
-![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/2acb6777-6b6f-4857-86ab-af0bfb9624a1)
+![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/5b19d6ea-6861-4f7e-9bc4-523e7601c06b)
 
 V.	The model building process :
 
@@ -91,36 +91,36 @@ KNN:
 
 The K-Nearest Neighbors (KNN) model is implemented in the provided code snippet as a function. KNN is a versatile and intuitive classification algorithm that makes predictions based on the majority class of the k-nearest neighbors in the feature space. In this case, the KNeighborsClassifier is configured with n_neighbors=6, meaning it considers the six nearest neighbors when making predictions. The model is trained using the fit method on the training data (X_train for features and Y_train for target labels). Once trained, the function returns the trained KNN model. KNN is particularly effective for simple classification tasks and is sensitive to the local structure of the data, making it suitable for scenarios where the decision boundaries are nonlinear or complex. However, it's essential to choose an appropriate value for k to balance model complexity and accuracy.
 
-![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/30192c8d-ab8e-4b80-906c-6a3e991015fb)
+![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/d93da432-a6c5-411b-b2f4-1794f10311ed)
 
 Decision Tree:
 
 The Decision Tree method is a machine learning model belonging to the supervised learning algorithm family. It is employed for solving classification and regression problems by recursively dividing the feature space into homogeneous regions. The fundamental idea behind the Decision Tree is to make decisions by progressively splitting the dataset into smaller subsets based on the most informative features at each step. Each node in the tree represents a question about a specific feature, and the branches describe the different possible answers to that question. The algorithm learns these questions and answers from the training data, aiming to maximize the purity of the resulting subsets.
 
-![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/776b06d5-cd44-4120-a3d1-3be8ba7a0b8a)
+![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/bce06791-f4af-4a3c-9b41-8bffe41f2fc6)
 
 Artificial neural network:
 
 This ANN is configured with a three-layer architecture, consisting of hidden layers with 10, 8, and 6 neurons, respectively. The max_iter parameter is set to 500, determining the maximum number of iterations for the solver to converge during training. The function then fits the ANN model to the provided training data (X_train for features and Y_train for target labels) and returns the trained model.
 Artificial Neural Networks, and specifically Multi-Layer Perceptrons (MLPs), are powerful models capable of learning complex patterns in data. In this context, the hidden layers contribute to the network's ability to capture intricate relationships within the input features. The choice of the number of neurons in each layer and the maximum number of iterations is a crucial aspect of tuning the model's performance. Once trained, the Artificial Neural Network can be used for making predictions on new data points.
 
-![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/a6c5e0ee-94ec-4379-a499-6750851078fb)
+![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/6f9a474c-dcb5-4a89-8835-f28b1e45c36e)
 
 RNN :
 
 This RNN architecture is designed for sequence-based tasks, such as time series prediction or natural language processing. The class constructor (_init_) initializes the model with essential parameters, including input_size (dimensionality of input features), output_size (dimensionality of the output), hidden_dim (number of hidden units in the RNN layer), and n_layers (number of RNN layers). The RNN layer is created using nn.RNN, specifying the input size, hidden dimensions, number of layers, and setting batch_first=True to expect input data with the batch size as the first dimension. The model further includes a fully connected layer (nn.Linear) to map the RNN outputs to the desired output size. Overall, this RNN architecture serves as a foundation for learning temporal dependencies in sequential data, with the flexibility to be customized for various applications through additional layers and activation functions.
 
-![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/2423a766-4610-484a-8462-25e965709c55)
+![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/dbe88486-b66b-43c3-8933-20a7455eda5d)
 
-![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/5d300b40-fb1e-4c63-b8a8-6acec13adb7a)
+![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/214f4cc0-2b2e-49e5-8e7e-b31cd0e8d8e6)
 
 We got an accuracy around : 
 
-![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/ab19fe10-42c5-422f-9026-637f58f2938c)
+![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/a3e186fa-2752-4ffa-909b-16acbe0a9a5a)
 
 As the results shows if the following plot:
 
-![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/ca3d9d5b-3b02-45af-9269-d6e7eaa68426)
+![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/561c230e-9280-4728-a88a-ca4487fef54c)
 
 LSTM :
 
@@ -130,17 +130,17 @@ The subsequent Flatten layer is applied to flatten the LSTM output, preparing it
 
 The model is then defined using the Model class from Keras, specifying the input and output layers. This LSTM-based architecture is suitable for tasks that involve learning sequential patterns and making predictions in a categorical context.
 
-![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/3cbf052e-3c65-4177-ae49-728770177773)
+![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/7dfa7228-e41b-4872-a9cd-3e1bd4fa96a2)
 
 Transformers :
 
 the Transformer architecture used in natural language processing and sequence-to-sequence tasks. This class encapsulates a self-attention mechanism and a feedforward neural network, both crucial components of the Transformer model. The self-attention mechanism, implemented as layers.MultiHeadAttention, enables the model to focus on different parts of the input sequence, capturing long-range dependencies effectively. The feedforward neural network (keras.Sequential) processes the attended output, allowing the model to capture non-linear relationships within the data. Layer normalization and dropout layers are incorporated to stabilize and regularize the learning process. The call method defines the forward pass, where the input sequence undergoes self-attention, normalization, and feedforward processing. The TransformerBlock is a key element in creating powerful and scalable Transformer models for various sequence-based tasks.
 
-![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/e7f6d66f-62b9-4011-b594-82e6318143f4)
+![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/82a86107-f2d6-498b-8b78-ff704191e0cb)
 
 Testing the models And Saving best one:
 
-![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/b9efb18d-2c97-4262-af6f-e0488421ffdd)
+![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/65bd0fd6-2f14-4ef9-b2b9-4f6a3d72e380)
 
 VI.	Insights of the Back-end making process :
 
@@ -151,17 +151,17 @@ FastAPI  and GraphQL :
 For the backend we choose FastAPI framework
 because it’s fast to learn and to use.
 
-![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/09d2c384-be2b-40a4-af3f-12e068589259)
+![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/69101660-859e-429e-947f-c4c7ac5ab7fc)
 
 To send request from the frontend to backend we used GraphQL a query language for APIs and a runtime for fulfilling those queries with the existing data. 
 
 We implemented it in our application with the library Strawberry. It’s a new GraphQL library for Python 3, inspired by dataclasses
 
-![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/db8f7231-2038-481e-b05e-f69c52105592)
+![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/78878790-4504-46da-a551-dbcb52e70b5b)
 
 As shows the following code we get to lunch our server:
 
-![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/8dec0d56-ff1a-4805-952b-25c806cc45c8)
+![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/d10a4052-1957-4d02-9dcb-4f7028d49b7f)
 
 VII.	Insights of the Front-end making process :
 
@@ -171,7 +171,7 @@ Angular
 
 For the frontend we choose Angular and TailwindCSS framework.
 
-![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/5c0bcf75-c489-4e62-9203-eeb9e8c6702b)
+![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/67901689-2877-43ad-9b04-0e7cc6aad06d)
 
 GraphQL Client Side
 
@@ -183,20 +183,20 @@ VIII.	Results and discussions:
 
 Home page :
 
-![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/ad78954d-bf67-4bf7-97ad-9a0f434a102e)
+![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/b1a4bd02-46ef-42e2-bb2e-69227e74d9ef)
 
 Question page :
 
 By clicking on the button the test will begin :
 
-![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/a51740ce-c2f9-4f2b-bbdf-cca8dd7f4e78)
-![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/53ca7f03-8125-4e19-91c9-3bf1d802d2ac)
+![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/a589bb06-2c35-41d0-afb9-a384bfbc279c)
+![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/ac4e0ec1-10d6-4591-a27e-2bde17b51eb3)
 
 Result Page:
 
 By clicking on the button the grades given by the models we trained will showed with the correct answers :
 
-![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/db732834-abec-45cc-99d6-88743446b701)
+![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/44fd19dd-f44d-4da2-8107-4d6002c2ac8e)
 
 IX.	Conclusion :
 
