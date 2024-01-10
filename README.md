@@ -27,7 +27,7 @@ II.	Scrapping :
 
 In the initial phase of our project, the imperative task of data collection was undertaken. Recognizing the significance of diverse and comprehensive data sources, we engaged in scraping information from a multitude of platforms. Our data collection efforts encompassed Websites, PDFs, databases, CSV files, Audio files, YouTube videos, and various other repositories.
 
-![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/c3700e64-f1bb-4632-abb1-212551250617)
+![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/645de944-6e80-4c9c-97cc-2488e330dc9a)
 
 
 On the Scrapping.ipynb file, you’ll get to the details of the code.
