@@ -34,13 +34,14 @@ On the Scrapping.ipynb file, you’ll get to the details of the code.
 The primary objective was to assemble a diverse set of questions that would serve as the foundation for our deep learning system. Simultaneously, obtaining corresponding answers for these questions was crucial for the training of our models. To streamline this process, a meticulous approach was adopted, involving the creation of a structured Google form to systematically gather answers.
 We managed to gather 107 answers from the following Form:
 
-![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/e695d549-ed22-4a1f-9250-27c103acc6fe)
+![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/8132d5b0-6120-4ecd-9faa-df9801084ba5)
 
-![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/3fb69cfd-5bb8-4da2-abf2-362613ed17d3)
+![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/eb1a4487-bb3d-4ad2-baea-673c7b2e16ca)
+
 
 We stored our database as follows:
 
-![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/adb88355-e251-4f51-a9d7-a96ea792beec)
+![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/a29a55eb-3da8-405d-b2cf-ab9b557f1617)
 
 The form questions are obtained through the use of scraping:
 
@@ -49,11 +50,11 @@ The form questions are obtained through the use of scraping:
 III.	EDA:
 EDA (Exploratory Data Analysis) involves analyzing and visualizing data to gain insights and understand its underlying patterns.
 
-![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/75866ffe-6cb5-4216-be74-598b4cb120b9)
+![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/e0c82a15-e822-4883-9876-70eaec946cea)
 
-![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/afe6a1bd-791e-48f0-94c2-5bdca8cd0cd0)
+![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/c2a3bdd7-4338-46a3-8027-59a0211ab062)
 
-![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/3f597b45-f81b-4f28-ae4d-3b84c97463f8)
+![image](https://github.com/Ayoubelfallah/system_grading_islamic_questions/assets/93795377/ab7a7c20-c64b-4935-8209-8c50cd49e2ff)
 
 
 IV.	Data pre-preprocessing:
